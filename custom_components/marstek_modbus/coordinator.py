@@ -624,6 +624,7 @@ def get_registers(version: str):
         "e v3": "e_v3.yaml",
         "d": "d.yaml",
         "a": "a.yaml",
+        "x1": "x1.yaml",
     }
 
     yaml_filename = filename_map.get(version)
@@ -660,6 +661,8 @@ def get_registers(version: str):
         from . import registers_v3 as registers
     elif version == "d":
         from . import registers_d as registers
+    elif version == "x1":
+        from . import registers_x1 as registers
     elif version == "a":
         # No legacy Python module for A exists; return empty definitions as fallback
         registers = None
