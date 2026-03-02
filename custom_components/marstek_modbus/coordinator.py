@@ -655,17 +655,9 @@ def get_registers(version: str):
                 _LOGGER.warning("Failed to load YAML registers %s: %s", yaml_path, e)
 
     # Fall back to legacy Python modules if YAML not present or failed to load
-    if version == "e v1/v2":
-        from . import registers_v12 as registers
-    elif version == "e v3":
-        from . import registers_v3 as registers
-    elif version == "d":
-        from . import registers_d as registers
-    elif version == "x1":
+    if version == "x1":
         from . import registers_x1 as registers
-    elif version == "a":
-        # No legacy Python module for A exists; return empty definitions as fallback
-        registers = None
+
 
     if registers:
         return {

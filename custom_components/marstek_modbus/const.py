@@ -19,11 +19,7 @@ DEFAULT_SCAN_INTERVALS = {
 }
 
 # Supported device versions
-SUPPORTED_VERSIONS = [
-    "E v1/v2", 
-    "E v3",
-    "D",
-    "A",
+SUPPORTED_VERSIONS = [    
     "X1"]
 
 # Note: register loading logic (get_registers_for_version) was moved to
