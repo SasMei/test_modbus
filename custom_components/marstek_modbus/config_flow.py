@@ -115,7 +115,7 @@ class MarstekConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 # Create configuration entry if no errors
                 if not errors["base"]:
                     title = translations.get(
-                        "config.step.user.title", "Anker  Solix X1 Modbus
+                        "config.step.user.title", "Anker  Solix X1 Modbus"
                     )
                     data = {
                         CONF_HOST: host,

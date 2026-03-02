@@ -1,12 +1,12 @@
 {
-  "name": "Marstek Venus Modbus",
+  "name": "Anker Solix X1 Modbus",
   "config_flow": true,
-  "domains": ["marstek_modbus"],
+  "domains": ["solixx1_modbus"],
   "homeassistant": "2025.9.0",
-  "country": "NL",
+  "country": "DE",
   "render_readme": true,
   "render_hacs": true,
-  "issue_tracker": "https://github.com/ViperRNMC/marstek_venus_modbus/issues",
-  "loggers": ["custom_components.marstek_modbus"],
-  "codeowners": ["@ViperRNMC"]
+  "issue_tracker": "https://github.com/SasMei/test_modbus/issues",
+  "loggers": ["custom_components.solixx1_modbus"],
+  "codeowners": ["@SasMei"]
 }
