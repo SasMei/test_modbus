@@ -387,7 +387,7 @@ async def async_test_modbus_connection(host: str, port: int, unit_id: int = 1):
         # Validate unit_id by reading a known register
         try:
             result = await client.async_read_register(
-                register=32104,
+                register=10000,
                 data_type="uint16",
                 count=1,
                 sensor_key="_test_unit_id",

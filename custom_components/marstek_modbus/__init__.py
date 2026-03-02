@@ -65,8 +65,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         if raw_version:
             normalized = raw_version.lower()
             legacy_map = {
-                "v1/v2": next((s for s in SUPPORTED_VERSIONS if s.lower().startswith("e v1")), "E v1/v2"),
-                "v3": next((s for s in SUPPORTED_VERSIONS if s.lower().startswith("e v3")), "E v3"),
+                "x1": next((s for s in SUPPORTED_VERSIONS if s.lower().startswith("x1")), "X1"),
             }
             # Also accept plain 'd' or 'D' and map to the canonical 'D'
             if normalized in legacy_map:
