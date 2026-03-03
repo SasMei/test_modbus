@@ -390,7 +390,8 @@ class SolixX1Coordinator(DataUpdateCoordinator):
         # Get the entity registry to check for disabled entities
         entity_registry = er.async_get(self.hass)
 
-        # Collect all dependency keys from all definitions
+       # Collect all dependency keys from all definitions
+        """     
         all_definitions_for_deps = self.EFFICIENCY_SENSOR_DEFINITIONS + self.STORED_ENERGY_SENSOR_DEFINITIONS
         dependency_keys_set = {
             dep_key
@@ -398,11 +399,12 @@ class SolixX1Coordinator(DataUpdateCoordinator):
             for dep_key in defn.get("dependency_keys", {}).values()
             if dep_key
         }
-
+        """
+        """
         # Debug logging
         for dep_key in dependency_keys_set:
             _LOGGER.debug("Dependency key '%s'", dep_key)
-
+        """
         # Iterate over each sensor definition to poll if due
         for sensor in self._all_definitions:
             key = sensor["key"]
@@ -417,16 +419,16 @@ class SolixX1Coordinator(DataUpdateCoordinator):
                 is_disabled = entry.disabled or entry.disabled_by is not None
 
             # Check if this key is a dependency key for any sensor
-            is_dependency = key in dependency_keys_set
+            """is_dependency = key in dependency_keys_set"""
 
             # Skip polling if entity is disabled unless it is a dependency key
-            if is_disabled:
+            """if is_disabled:
                 if is_dependency:
                     _LOGGER.debug("Fetching disabled dependency key '%s'", key)
                 else:
                     _LOGGER.debug("Skipping disabled entity '%s'", sensor.get("name", key))
                     continue
-
+            """
             # Determine polling interval for this sensor, using self.scan_intervals
             interval_name = sensor.get("scan_interval")
             interval = None
