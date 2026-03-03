@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Connect to Marstek Venus Modbus",
+        "title": "Connect to SolixX1 Venus Modbus",
         "description": "Enter the Modbus TCP connection details",
         "data": {
           "host": "IP Address",
@@ -35,7 +35,7 @@
         }
       },
       "menu": {
-        "title": "Marstek options",
+        "title": "SolixX1 options",
         "description": "Choose which settings to configure",
         "menu_options": {
           "connection": "Connection settings",

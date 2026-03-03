@@ -1,7 +1,7 @@
 """
 Helper module for Modbus TCP communication using pymodbus.
 Provides an abstraction for reading and writing registers from
-a Marstek Venus battery system asynchronously.
+an Anker Solix X1 system asynchronously.
 """
 
 from pymodbus.client.tcp import AsyncModbusTcpClient
@@ -15,7 +15,7 @@ from ..const import DEFAULT_MESSAGE_WAIT_MS, DEFAULT_UNIT_ID
 _LOGGER = logging.getLogger(__name__)
 
 
-class MarstekModbusClient:
+class SolixX1ModbusClient:
     """
     Wrapper for pymodbus AsyncModbusTcpClient with helper methods
     for async reading/writing and interpreting common data types.

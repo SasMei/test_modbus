@@ -13,7 +13,7 @@ from homeassistant.helpers.update_coordinator import DataUpdateCoordinator
 
 from .const import DEFAULT_SCAN_INTERVALS, SUPPORTED_VERSIONS, DEFAULT_UNIT_ID
 
-from .helpers.modbus_client import MarstekModbusClient
+from .helpers.modbus_client import SolixX1ModbusClient
 from pathlib import Path
 
 _LOGGER = logging.getLogger(__name__)
@@ -27,8 +27,8 @@ def get_entity_type(entity) -> str:
     return "entity"
 
 
-class MarstekCoordinator(DataUpdateCoordinator):
-    """Coordinator managing all Marstek Venus Modbus sensors."""
+class SolixX1Coordinator(DataUpdateCoordinator):
+    """Coordinator managing all SolixX1 Venus Modbus sensors."""
 
     def __init__(self, hass: HomeAssistant, entry: ConfigEntry):
         """Initialize the coordinator with connection parameters and update interval."""        
@@ -93,7 +93,7 @@ class MarstekCoordinator(DataUpdateCoordinator):
         )
 
         # Initialize Modbus client for communication
-        self.client = MarstekModbusClient(
+        self.client = SolixX1ModbusClient(
             self.host,
             self.port,
             message_wait_ms=self.message_wait_ms,
@@ -127,7 +127,7 @@ class MarstekCoordinator(DataUpdateCoordinator):
         super().__init__(
             hass,
             _LOGGER,
-            name="MarstekCoordinator",
+            name="SolixX1Coordinator",
             update_interval=self.update_interval,
         )
          
@@ -153,7 +153,7 @@ class MarstekCoordinator(DataUpdateCoordinator):
         if hasattr(self, "_listeners") and self._listeners is not None:
             # update_interval is a property in DataUpdateCoordinator
             try:
-                super(MarstekCoordinator, self.__class__).update_interval.fset(self, self.update_interval)
+                super(SolixX1Coordinator, self.__class__).update_interval.fset(self, self.update_interval)
                 _LOGGER.debug(
                     "Coordinator update_interval changed dynamically to %s due to options change",
                     self.update_interval,

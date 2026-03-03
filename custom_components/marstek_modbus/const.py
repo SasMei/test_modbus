@@ -1,7 +1,7 @@
 # Integration domain name
 DOMAIN = "solixx1_modbus"
 
-# Manufacturer and model information for the Marstek Venus battery
+# Manufacturer and model information for the SolixX1 Venus battery
 MANUFACTURER = "Anker"
 MODEL = "Solix X1"
 

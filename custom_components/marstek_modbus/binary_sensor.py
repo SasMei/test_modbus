@@ -13,7 +13,7 @@ from homeassistant.helpers.entity import EntityCategory
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .coordinator import MarstekCoordinator
+from .coordinator import SolixX1Coordinator
 from .const import DOMAIN, MANUFACTURER, MODEL
 
 _LOGGER = logging.getLogger(__name__)
@@ -50,7 +50,7 @@ class MarstekBinarySensor(CoordinatorEntity, BinarySensorEntity):
     the coordinator communicating with the Modbus device.
     """
 
-    def __init__(self, coordinator: MarstekCoordinator, definition: dict):
+    def __init__(self, coordinator: SolixX1Coordinator, definition: dict):
         """
         Initialize the binary sensor entity.
 

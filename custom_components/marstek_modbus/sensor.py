@@ -1,5 +1,5 @@
 """
-Marstek Venus Modbus sensor entities.
+SolixX1 Venus Modbus sensor entities.
 
 All sensors now derive their values from the shared coordinator data.
 No separate async_update needed; coordinator handles polling.
@@ -14,7 +14,7 @@ from homeassistant.helpers.entity import Entity, EntityCategory
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .coordinator import MarstekCoordinator
+from .coordinator import SolixX1Coordinator
 from .const import DOMAIN, MANUFACTURER, MODEL
 
 _LOGGER = logging.getLogger(__name__)
@@ -25,26 +25,26 @@ async def async_setup_entry(
     entry: ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
-    """Set up all Marstek sensors from definitions."""
+    """Set up all SolixX1 sensors from definitions."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
 
     # Create sensor entities from coordinator-provided definitions
-    entities = [MarstekSensor(coordinator, d) for d in coordinator.SENSOR_DEFINITIONS]
+    entities = [SolixX1Sensor(coordinator, d) for d in coordinator.SENSOR_DEFINITIONS]
     entities.extend(
-        MarstekEfficiencySensor(coordinator, d) for d in coordinator.EFFICIENCY_SENSOR_DEFINITIONS
+        SolixX1EfficiencySensor(coordinator, d) for d in coordinator.EFFICIENCY_SENSOR_DEFINITIONS
     )
     entities.extend(
-        MarstekStoredEnergySensor(coordinator, d) for d in coordinator.STORED_ENERGY_SENSOR_DEFINITIONS
+        SolixX1StoredEnergySensor(coordinator, d) for d in coordinator.STORED_ENERGY_SENSOR_DEFINITIONS
     )
 
     # Add all entities to Home Assistant
     async_add_entities(entities)
 
 
-class MarstekSensor(CoordinatorEntity, SensorEntity):
+class SolixX1Sensor(CoordinatorEntity, SensorEntity):
     """Generic Modbus sensor reading from the coordinator."""
 
-    def __init__(self, coordinator: MarstekCoordinator, definition: dict):
+    def __init__(self, coordinator: SolixX1Coordinator, definition: dict):
         super().__init__(coordinator)
 
         # Store the key and definition
@@ -120,14 +120,14 @@ class MarstekSensor(CoordinatorEntity, SensorEntity):
         }
 
 
-class MarstekCalculatedSensor(CoordinatorEntity, SensorEntity):
+class SolixX1CalculatedSensor(CoordinatorEntity, SensorEntity):
     """
     Base class for calculated sensors that depend on multiple coordinator keys.
 
     Handles registration of dependency keys and provides update handling.
     """
 
-    def __init__(self, coordinator: MarstekCoordinator, definition: dict):
+    def __init__(self, coordinator: SolixX1Coordinator, definition: dict):
         """Initialize the calculated sensor and register dependencies."""
         super().__init__(coordinator)
 
@@ -265,7 +265,7 @@ class MarstekCalculatedSensor(CoordinatorEntity, SensorEntity):
         raise NotImplementedError
 
 
-class MarstekStoredEnergySensor(MarstekCalculatedSensor):
+class SolixX1StoredEnergySensor(SolixX1CalculatedSensor):
     """
     Sensor calculating stored battery energy (kWh).
 
@@ -280,7 +280,7 @@ class MarstekStoredEnergySensor(MarstekCalculatedSensor):
         return stored_energy
 
 
-class MarstekEfficiencySensor(MarstekCalculatedSensor):
+class SolixX1EfficiencySensor(SolixX1CalculatedSensor):
     """
     Calculate either Round Trip Efficiency (RTE) or Actual Conversion Efficiency.
 

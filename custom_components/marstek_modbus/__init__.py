@@ -1,5 +1,5 @@
 """
-Main integration setup for Marstek Venus Modbus component.
+Main integration setup for Anker Solix X1 Modbus component.
 
 Handles setting up and unloading config entries, initializing
 the data coordinator, and forwarding setup to sensor and select platforms.
@@ -11,7 +11,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 
 from .const import DOMAIN
-from .coordinator import MarstekCoordinator
+from .coordinator import SolixX1Coordinator
 from .const import SUPPORTED_VERSIONS
 
 _LOGGER = logging.getLogger(__name__)
@@ -81,7 +81,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
                     new_data["device_version"] = new_version
                     hass.config_entries.async_update_entry(entry, data=new_data)
         # Create and initialize the coordinator for data management
-        coordinator = MarstekCoordinator(hass, entry)
+        coordinator = SolixX1Coordinator(hass, entry)
         hass.data.setdefault(DOMAIN, {})[entry.entry_id] = coordinator
 
         # Forward setup to all platforms defined in PLATFORMS

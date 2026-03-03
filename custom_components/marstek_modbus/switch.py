@@ -1,5 +1,5 @@
 """
-Module for creating switch sensor entities for Marstek Venus battery devices.
+Module for creating switch sensor entities for SolixX1 Venus battery devices.
 switch sensors read and write Modbus registers asynchronously via the coordinator.
 All entities are registered through the coordinator to enable centralized polling.
 """
@@ -13,7 +13,7 @@ from homeassistant.helpers.entity import EntityCategory
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .coordinator import MarstekCoordinator
+from .coordinator import SolixX1Coordinator
 from .const import DOMAIN, MANUFACTURER, MODEL
 
 _LOGGER = logging.getLogger(__name__)
@@ -38,19 +38,19 @@ async def async_setup_entry(
     """
     # Retrieve the coordinator instance from hass data and add entities
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    entities = [MarstekSwitch(coordinator, definition) for definition in coordinator.SWITCH_DEFINITIONS]
+    entities = [SolixX1Switch(coordinator, definition) for definition in coordinator.SWITCH_DEFINITIONS]
     async_add_entities(entities)
 
 
-class MarstekSwitch(CoordinatorEntity, SwitchEntity):
+class SolixX1Switch(CoordinatorEntity, SwitchEntity):
     """
-    Representation of a Modbus switch entity for Marstek Venus.
+    Representation of a Modbus switch entity for SolixX1 Venus.
 
     Sensor state is read and write asynchronously via
     the coordinator communicating with the Modbus device.
     """
 
-    def __init__(self, coordinator: MarstekCoordinator, definition: dict):
+    def __init__(self, coordinator: SolixX1Coordinator, definition: dict):
         """
         Initialize the switch entity.
 

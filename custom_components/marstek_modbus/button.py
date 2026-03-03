@@ -1,5 +1,5 @@
 """
-This module defines a ButtonEntity for triggering actions on a Marstek Venus battery
+This module defines a ButtonEntity for triggering actions on a SolixX1 Venus battery
 via Modbus register writes.
 """
 
@@ -11,7 +11,7 @@ from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity import EntityCategory
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
-from .coordinator import MarstekCoordinator
+from .coordinator import SolixX1Coordinator
 from .const import DOMAIN, MANUFACTURER, MODEL
 
 _LOGGER = logging.getLogger(__name__)
@@ -23,7 +23,7 @@ async def async_setup_entry(
     async_add_entities: AddEntitiesCallback,
 ):
     """
-    Set up the MarstekButton entities using the provided config entry.
+    Set up the SolixX1Button entities using the provided config entry.
 
     Retrieves the coordinator and creates button entities
     from the button definitions, then adds them to Home Assistant.
@@ -31,14 +31,14 @@ async def async_setup_entry(
     """
     # Retrieve the coordinator instance from hass data and add entities
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    entities = [MarstekButton(coordinator, definition) for definition in coordinator.BUTTON_DEFINITIONS]
+    entities = [SolixX1Button(coordinator, definition) for definition in coordinator.BUTTON_DEFINITIONS]
     async_add_entities(entities)
 
 
-class MarstekButton(ButtonEntity):
-    """ButtonEntity to trigger actions on the Marstek Venus battery."""
+class SolixX1Button(ButtonEntity):
+    """ButtonEntity to trigger actions on the SolixX1 Venus battery."""
 
-    def __init__(self, coordinator: MarstekCoordinator, definition: dict):
+    def __init__(self, coordinator: SolixX1Coordinator, definition: dict):
         """
         Initialize the button entity.
 

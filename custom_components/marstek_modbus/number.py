@@ -1,5 +1,5 @@
 """
-Module for creating number entities for Marstek Venus battery devices.
+Module for creating number entities for SolixX1 Venus battery devices.
 Numbers read Modbus registers asynchronously via the coordinator.
 All entities are registered through the coordinator to enable centralized polling.
 """
@@ -13,7 +13,7 @@ from homeassistant.helpers.entity import EntityCategory
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .coordinator import MarstekCoordinator
+from .coordinator import SolixX1Coordinator
 from .const import DOMAIN, MANUFACTURER, MODEL
 
 _LOGGER = logging.getLogger(__name__)
@@ -38,19 +38,19 @@ async def async_setup_entry(
     """
     # Retrieve the coordinator instance from hass data and add entities
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    entities = [MarstekNumber(coordinator, definition) for definition in coordinator.NUMBER_DEFINITIONS]
+    entities = [SolixX1Number(coordinator, definition) for definition in coordinator.NUMBER_DEFINITIONS]
     async_add_entities(entities)   
 
 
-class MarstekNumber(CoordinatorEntity, NumberEntity):
+class SolixX1Number(CoordinatorEntity, NumberEntity):
     """
-    Representation of a Modbus number entity for Marstek Venus.
+    Representation of a Modbus number entity for SolixX1 Venus.
 
     Number state is read and write asynchronously via
     the coordinator communicating with the Modbus device.
     """
 
-    def __init__(self, coordinator: MarstekCoordinator, definition: dict):
+    def __init__(self, coordinator: SolixX1Coordinator, definition: dict):
         """
         Initialize the number entity.
 

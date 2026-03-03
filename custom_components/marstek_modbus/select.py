@@ -1,6 +1,6 @@
 """
 This module defines a SelectEntity for setting and reading the user work mode
-and force mode of a Marstek Venus battery via Modbus within Home Assistant.
+and force mode of a SolixX1 Venus battery via Modbus within Home Assistant.
 """
 
 import logging
@@ -14,7 +14,7 @@ from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN, MANUFACTURER, MODEL
-from .coordinator import MarstekCoordinator
+from .coordinator import SolixX1Coordinator
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -39,28 +39,28 @@ async def async_setup_entry(
     # Retrieve the coordinator instance from hass data and add entities
     coordinator = hass.data[DOMAIN][entry.entry_id]
     entities = [
-        MarstekSelect(coordinator, definition)
+        SolixX1Select(coordinator, definition)
         for definition in coordinator.SELECT_DEFINITIONS
     ]
     async_add_entities(entities)
 
 
-class MarstekSelect(CoordinatorEntity, SelectEntity):
+class SolixX1Select(CoordinatorEntity, SelectEntity):
     """
-    Representation of a Modbus select entity for Marstek Venus.
+    Representation of a Modbus select entity for SolixX1 Venus.
 
     Select state is read and write asynchronously via
     the coordinator communicating with the Modbus device.
     """
 
     def __init__(
-        self, coordinator: MarstekCoordinator, definition: dict[str, Any]
+        self, coordinator: SolixX1Coordinator, definition: dict[str, Any]
     ) -> None:
         """
         Initialize the select entity.
 
         Args:
-            coordinator: The MarstekCoordinator instance managing data updates.
+            coordinator: The SolixX1Coordinator instance managing data updates.
             definition: A dictionary defining the select entity's properties.
         """
         super().__init__(coordinator)

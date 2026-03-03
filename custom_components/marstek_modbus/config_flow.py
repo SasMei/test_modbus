@@ -1,4 +1,4 @@
-"""Config flow for Marstek Venus Modbus integration."""
+"""Config flow for SolixX1 Venus Modbus integration."""
 import asyncio
 import logging
 import socket
@@ -15,7 +15,7 @@ from .const import (
     DOMAIN,
     SUPPORTED_VERSIONS,
 )
-from .helpers.modbus_client import MarstekModbusClient
+from .helpers.modbus_client import SolixX1ModbusClient
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -42,8 +42,8 @@ SCHEMA_POLLING = vol.Schema(
 )
 
 
-class MarstekConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle the configuration flow for the Marstek Venus Modbus integration."""
+class SolixX1ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+    """Handle the configuration flow for the SolixX1 Venus Modbus integration."""
 
     VERSION = 1
 
@@ -200,11 +200,11 @@ class MarstekConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @staticmethod
     def async_get_options_flow(config_entry):
         """Get the options flow for this handler."""
-        return MarstekOptionsFlow(config_entry)
+        return SolixX1OptionsFlow(config_entry)
 
 
-class MarstekOptionsFlow(config_entries.OptionsFlow):
-    """Handle Marstek Venus Modbus options flow."""
+class SolixX1OptionsFlow(config_entries.OptionsFlow):
+    """Handle SolixX1 Venus Modbus options flow."""
 
     def __init__(self, config_entry):
         """Initialize options flow."""
@@ -297,7 +297,7 @@ class MarstekOptionsFlow(config_entries.OptionsFlow):
 
                 # Test connection with new parameters
                 try:
-                    test_client = MarstekModbusClient(
+                    test_client = SolixX1ModbusClient(
                         host,
                         int(port),
                         message_wait_ms=getattr(coordinator, "message_wait_ms", None),
@@ -375,7 +375,7 @@ async def async_test_modbus_connection(host: str, port: int, unit_id: int = 1):
         "Testing Modbus connection to %s:%d with unit %d", host, port, unit_id
     )
 
-    client = MarstekModbusClient(host, int(port), timeout=3, unit_id=int(unit_id))
+    client = SolixX1ModbusClient(host, int(port), timeout=3, unit_id=int(unit_id))
     try:
         connected = await client.async_connect()
         if not connected:
