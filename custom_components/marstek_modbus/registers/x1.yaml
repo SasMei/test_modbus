@@ -52,23 +52,6 @@ SENSOR_DEFINITIONS:
         scan_interval: very_low
         precision: 0
 
-
-BUTTON_DEFINITIONS:
-    reset_device:
-        register: 41000
-        command: 21930
-        icon: "mdi:restart"
-        category: diagnostic
-        enabled_by_default: false
-        data_type: uint16
-    factory_reset:
-        register: 41001
-        command: 21930
-        icon: "mdi:factory"
-        category: diagnostic
-        enabled_by_default: false
-        data_type: uint16
-
 EFFICIENCY_SENSOR_DEFINITIONS:
     round_trip_efficiency_total:
         key: round_trip_efficiency_total
