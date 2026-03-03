@@ -30,13 +30,13 @@ async def async_setup_entry(
 
     # Create sensor entities from coordinator-provided definitions
     entities = [SolixX1Sensor(coordinator, d) for d in coordinator.SENSOR_DEFINITIONS]
-    entities.extend(
+    """entities.extend(
         SolixX1EfficiencySensor(coordinator, d) for d in coordinator.EFFICIENCY_SENSOR_DEFINITIONS
     )
     entities.extend(
         SolixX1StoredEnergySensor(coordinator, d) for d in coordinator.STORED_ENERGY_SENSOR_DEFINITIONS
     )
-
+"""
     # Add all entities to Home Assistant
     async_add_entities(entities)
 
