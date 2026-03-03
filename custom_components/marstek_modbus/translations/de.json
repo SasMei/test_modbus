@@ -65,11 +65,11 @@
   },
   "entity": {
     "sensor": {
-      "device_name": {
-        "name": "Gerätename"
+      "plant_status": {
+        "name": "Status"
       },
-      "sn_code": {
-        "name": "Seriennummer"
+      "activepower_acside": {
+        "name": "Aktive Leistung (AC-Seite)"
       },
       "software_version": {
         "name": "Softwareversion"
