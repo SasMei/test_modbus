@@ -58,7 +58,8 @@ SENSOR_DEFINITIONS:
         scale: 1
         unit: null
         enabled_by_default: true
-        data_type: string
+        data_type: char
+        count: 10
         precision: 0
         scan_interval: very_low
 

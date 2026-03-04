@@ -588,6 +588,7 @@ def get_registers(version: str):
     legacy_to_new = {
         "v1/v2": "e v1/v2",
         "v3": "e v3",
+        "x1": "x1",
     }
     if version in legacy_to_new:
         mapped = legacy_to_new[version]
