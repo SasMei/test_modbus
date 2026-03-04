@@ -51,15 +51,13 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         scan_interval: very_low
         precision: 0
-
-    modelname:
+    model_name:
         register: 10090
-        count: 16
+        count: 10
         scale: 1
         unit: null
         enabled_by_default: true
         data_type: char
-        count: 10
         precision: 0
         scan_interval: very_low
 
