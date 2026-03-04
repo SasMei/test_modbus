@@ -71,6 +71,9 @@
       "activepower_acside": {
         "name": "Aktive Leistung (AC-Seite)"
       },
+      "modelname": {
+        "name": "Modellname"
+      }
       "software_version": {
         "name": "Softwareversion"
       },

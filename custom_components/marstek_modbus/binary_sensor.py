@@ -1,5 +1,5 @@
 """
-Module for creating binary sensor entities for Marstek Venus battery devices.
+Module for creating binary sensor entities for SolixX1 Venus battery devices.
 Binary sensors read Modbus registers asynchronously via the coordinator.
 All entities are registered through the coordinator to enable centralized polling.
 """
@@ -38,13 +38,13 @@ async def async_setup_entry(
     """
     # Retrieve the coordinator instance from hass data and add entities
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    entities = [MarstekBinarySensor(coordinator, definition) for definition in coordinator.BINARY_SENSOR_DEFINITIONS]
+    entities = [SolixX1BinarySensor(coordinator, definition) for definition in coordinator.BINARY_SENSOR_DEFINITIONS]
     async_add_entities(entities)   
 
 
-class MarstekBinarySensor(CoordinatorEntity, BinarySensorEntity):
+class SolixX1BinarySensor(CoordinatorEntity, BinarySensorEntity):
     """
-    Representation of a Modbus binary sensor entity for Marstek Venus.
+    Representation of a Modbus binary sensor entity for SolixX1 Venus.
 
     Sensor state is read asynchronously via
     the coordinator communicating with the Modbus device.
