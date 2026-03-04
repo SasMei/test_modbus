@@ -340,7 +340,7 @@ class SolixX1ModbusClient:
                     elif data_type == "char":
                         byte_array = bytearray()
                         for reg in regs:
-                            byte_array.append((reg >> 8) & 0xFF)
+                            byte_array.append((reg << 8) & 0xFF)
                             byte_array.append(reg & 0xFF)
                         return byte_array.decode("ascii", errors="ignore").rstrip('\x00')
 
