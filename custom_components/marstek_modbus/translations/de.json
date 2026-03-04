@@ -74,6 +74,9 @@
       "model_name": {
         "name": "Modellname"
       },
+      "model_name2": {
+        "name": "Modellname 2"
+      },
       "software_version": {
         "name": "Softwareversion"
       },

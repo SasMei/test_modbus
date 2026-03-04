@@ -60,6 +60,15 @@ SENSOR_DEFINITIONS:
         data_type: char
         precision: 0
         scan_interval: very_low
+    model_name2:
+        register: 30000
+        count: 10
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: char
+        precision: 0
+        scan_interval: very_low
 
 EFFICIENCY_SENSOR_DEFINITIONS:
     round_trip_efficiency_total:
