@@ -52,6 +52,16 @@ SENSOR_DEFINITIONS:
         scan_interval: very_low
         precision: 0
 
+    modelname:
+        register: 10090
+        count: 16
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 0
+        scan_interval: very_low
+
 EFFICIENCY_SENSOR_DEFINITIONS:
     round_trip_efficiency_total:
         key: round_trip_efficiency_total
