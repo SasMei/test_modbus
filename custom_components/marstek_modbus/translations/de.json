@@ -71,6 +71,9 @@
       "activepower_acside": {
         "name": "Aktive Leistung (AC-Seite)"
       },
+      "daily_pv_production": {
+        "name": "Tägliche PV-Produktion"
+      },
       "model_name": {
         "name": "Modellname"
       },

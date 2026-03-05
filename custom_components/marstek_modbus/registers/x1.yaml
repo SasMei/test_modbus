@@ -51,6 +51,17 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         scan_interval: very_low
         precision: 0
+    daily_pv_production:
+        register: 10016
+        count: 2
+        scale: 0.1
+        unit: kWh
+        device_class: wenergy
+        state_class: total_increasing
+        enabled_by_default: true
+        data_type: int32
+        precision: 2
+        scan_interval: low
     model_name:
         register: 10090
         count: 10
