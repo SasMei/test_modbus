@@ -56,10 +56,10 @@ SENSOR_DEFINITIONS:
         count: 2
         scale: 0.1
         unit: kWh
-        device_class: wenergy
+        device_class: energy
         state_class: total_increasing
         enabled_by_default: true
-        data_type: int32
+        data_type: uint32
         precision: 2
         scan_interval: low
     model_name:

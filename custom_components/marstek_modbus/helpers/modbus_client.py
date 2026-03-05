@@ -339,7 +339,7 @@ class SolixX1ModbusClient:
                             return None
                         #return (regs[0] << 16) | regs[1]
                         #return regs[1] | (regs[0] << 16)
-                        return regs
+                        return regs[0]
 
                     elif data_type == "char":
                         byte_array = bytearray()
