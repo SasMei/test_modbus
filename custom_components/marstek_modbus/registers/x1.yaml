@@ -54,7 +54,7 @@ SENSOR_DEFINITIONS:
     daily_pv_production:
         register: 10016
         count: 2
-        scale: 0.1
+        scale: 10
         unit: kWh
         device_class: energy
         state_class: total_increasing
