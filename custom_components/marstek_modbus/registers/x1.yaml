@@ -46,11 +46,6 @@ SENSOR_DEFINITIONS:
         data_type: int32
         precision: 2
         scan_interval: low
-        data_type: int32
-        unit: null
-        enabled_by_default: true
-        scan_interval: very_low
-        precision: 0
     daily_pv_production:
         register: 10016
         count: 2
