@@ -74,6 +74,9 @@
       "daily_pv_production": {
         "name": "Tägliche PV-Produktion"
       },
+      "total_pv_production": {
+        "name": "Gesamte PV-Produktion"
+      },
       "model_name": {
         "name": "Modellname"
       },

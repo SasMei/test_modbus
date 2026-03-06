@@ -62,6 +62,17 @@ SENSOR_DEFINITIONS:
         data_type: uint32
         precision: 2
         scan_interval: low
+    total_pv_production:
+        register: 10018
+        count: 2
+        scale: 10
+        unit: kWh
+        device_class: energy
+        state_class: total_increasing
+        enabled_by_default: true
+        data_type: uint32
+        precision: 2
+        scan_interval: low
     model_name:
         register: 10090
         count: 10
