@@ -325,8 +325,9 @@ class SolixX1ModbusClient:
                             return None
                         #val = (regs[0] << 16) | regs[1]
                         #val = regs[1] | (regs[0] << 16)
-                        #return val - 0x100000000 if val >= 0x80000000 else val
-                        return regs
+                        val = (regs[1]*65536 + regs[0])
+                        return val - 0x100000000 if val >= 0x80000000 else val
+                        
 
                     elif data_type == "uint32":
                         if len(regs) < 2:
@@ -339,7 +340,7 @@ class SolixX1ModbusClient:
                             return None
                         #return (regs[0] << 16) | regs[1]
                         #return regs[1] | (regs[0] << 16)
-                        return regs[0]
+                        return (regs[1]*65536 + regs[0])
 
                     elif data_type == "char":
                         byte_array = bytearray()
