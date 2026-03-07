@@ -323,8 +323,6 @@ class SolixX1ModbusClient:
                                 len(regs),
                             )
                             return None
-                        #val = (regs[0] << 16) | regs[1]
-                        #val = regs[1] | (regs[0] << 16)
                         val = (regs[1]*65536 + regs[0])
                         return val - 0x100000000 if val >= 0x80000000 else val
                         

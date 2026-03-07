@@ -29,6 +29,7 @@ SENSOR_DEFINITIONS:
 
     plant_status:
         register: 10000
+        count: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -38,6 +39,7 @@ SENSOR_DEFINITIONS:
 
     info_battery_status:
         register: 10001
+        count: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -47,6 +49,7 @@ SENSOR_DEFINITIONS:
 
     pv_power:
         register: 10002
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -58,6 +61,7 @@ SENSOR_DEFINITIONS:
 
     3rd_party_pv_power:
         register: 10004
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -69,6 +73,7 @@ SENSOR_DEFINITIONS:
 
     active_power_pcs_ac_side:
         register: 10006
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -80,6 +85,7 @@ SENSOR_DEFINITIONS:
 
     info_battery_power:
         register: 10008
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -91,6 +97,7 @@ SENSOR_DEFINITIONS:
 
     load_power:
         register: 10010
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -102,6 +109,7 @@ SENSOR_DEFINITIONS:
 
     grid_power:
         register: 10012
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -113,6 +121,7 @@ SENSOR_DEFINITIONS:
 
     soc:
         register: 10014
+        count: 1
         scale: 1
         unit: "%"
         state_class: "measurement"
@@ -123,6 +132,7 @@ SENSOR_DEFINITIONS:
 
     soh:
         register: 10015
+        count: 1
         scale: 1
         unit: "%"
         state_class: "measurement"
@@ -133,6 +143,7 @@ SENSOR_DEFINITIONS:
 
     daily_pv_generation:
         register: 10016
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -144,6 +155,7 @@ SENSOR_DEFINITIONS:
 
     total_pv_generation:
         register: 10018
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -155,6 +167,7 @@ SENSOR_DEFINITIONS:
 
     daily_battery_charge_energy:
         register: 10020
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -166,6 +179,7 @@ SENSOR_DEFINITIONS:
 
     total_battery_charge_energy:
         register: 10022
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -177,6 +191,7 @@ SENSOR_DEFINITIONS:
 
     daily_load_consumption_energy:
         register: 10024
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -188,6 +203,7 @@ SENSOR_DEFINITIONS:
 
     total_load_consumption_energy:
         register: 10026
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -199,6 +215,7 @@ SENSOR_DEFINITIONS:
 
     daily_purchased_energy:
         register: 10028
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -210,6 +227,7 @@ SENSOR_DEFINITIONS:
 
     total_purchased_energy:
         register: 10030
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -221,6 +239,7 @@ SENSOR_DEFINITIONS:
 
     daily_feed_in_energy:
         register: 10032
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -232,6 +251,7 @@ SENSOR_DEFINITIONS:
 
     total_feed_in_energy:
         register: 10034
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -243,6 +263,7 @@ SENSOR_DEFINITIONS:
 
     rechargeable_power:
         register: 10036
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -254,6 +275,7 @@ SENSOR_DEFINITIONS:
 
     dischargeable_power:
         register: 10038
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -265,6 +287,7 @@ SENSOR_DEFINITIONS:
 
     number_of_pcs:
         register: 10040
+        count: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -274,6 +297,7 @@ SENSOR_DEFINITIONS:
 
     number_of_available_pcs:
         register: 10041
+        count: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -283,6 +307,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_1:
         register: 10042
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -291,6 +316,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_2:
         register: 10043
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -299,6 +325,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_3:
         register: 10044
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -307,6 +334,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_4:
         register: 10045
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -315,6 +343,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_5:
         register: 10046
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -323,6 +352,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_6:
         register: 10047
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -331,6 +361,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_7:
         register: 10048
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -339,6 +370,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_8:
         register: 10049
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -353,6 +385,7 @@ SENSOR_DEFINITIONS:
 
     system_time:
         register: 10060
+        count: 2
         unit: null
         device_class: "timestamp"
         enabled_by_default: true
@@ -362,6 +395,7 @@ SENSOR_DEFINITIONS:
 
     time_zone:
         register: 10062
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -370,6 +404,7 @@ SENSOR_DEFINITIONS:
 
     dst:
         register: 10063
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -378,6 +413,7 @@ SENSOR_DEFINITIONS:
 
     work_mode:
         register: 10064
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -386,6 +422,7 @@ SENSOR_DEFINITIONS:
 
     active_power_control_percentage:
         register: 10069
+        count: 1
         scale: 1
         unit: "%"
         enabled_by_default: true
@@ -395,6 +432,7 @@ SENSOR_DEFINITIONS:
 
     reactive_power_control_percentage:
         register: 10070
+        count: 1
         scale: 1
         unit: "%"
         enabled_by_default: true
@@ -404,6 +442,7 @@ SENSOR_DEFINITIONS:
 
     battery_charge_discharge_control:
         register: 10071
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -415,6 +454,7 @@ SENSOR_DEFINITIONS:
 
     switch_on_off_control:
         register: 10073
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -424,6 +464,7 @@ SENSOR_DEFINITIONS:
 
     export_power_limit_control_mode:
         register: 10074
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -433,6 +474,7 @@ SENSOR_DEFINITIONS:
 
     export_power_limit_control_value:
         register: 10075
+        count: 2
         unit: "W"
         device_class: "power"
         state_class: "measurement"
@@ -443,6 +485,7 @@ SENSOR_DEFINITIONS:
 
     import_power_limit_control_mode:
         register: 10077
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -452,6 +495,7 @@ SENSOR_DEFINITIONS:
 
     import_power_limit_control_value:
         register: 10078
+        count: 2
         unit: "W"
         device_class: "power"
         state_class: "measurement"
@@ -462,6 +506,7 @@ SENSOR_DEFINITIONS:
 
     com_disconnect_tie_with_vpp:
         register: 10080
+        count: 1
         scale: 1
         unit: "s"
         device_class: "duration"
@@ -515,6 +560,7 @@ SENSOR_DEFINITIONS:
 
     pcs_rated_power:
         register: 10124
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -526,6 +572,7 @@ SENSOR_DEFINITIONS:
 
     pcs_maximum_active_power:
         register: 10126
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -537,6 +584,7 @@ SENSOR_DEFINITIONS:
 
     pcs_maximum_apparent_power:
         register: 10128
+        count: 2
         scale: 1
         unit: "kVA"
         device_class: "apparent_power"
@@ -548,6 +596,7 @@ SENSOR_DEFINITIONS:
 
     pcs_numbers_of_mppt:
         register: 10130
+        count: 1
         scale: 1
         unit: null
         state_class: "measurement"
@@ -558,6 +607,7 @@ SENSOR_DEFINITIONS:
 
     pcs_strings_per_mppt:
         register: 10131
+        count: 1
         scale: 1
         unit: null
         state_class: "measurement"
@@ -568,6 +618,7 @@ SENSOR_DEFINITIONS:
 
     pcs_output_mode:
         register: 10132
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -582,6 +633,7 @@ SENSOR_DEFINITIONS:
 
     pcs_work_status:
         register: 10143
+        count: 1
         scale: 1
         unit: null
         state_class: "measurement"
@@ -592,6 +644,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_1:
         register: 10144
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -601,6 +654,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_2:
         register: 10145
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -610,6 +664,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_3:
         register: 10146
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -619,6 +674,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_4:
         register: 10147
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -628,6 +684,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_5:
         register: 10148
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -637,6 +694,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_6:
         register: 10149
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -646,6 +704,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_7:
         register: 10150
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -655,6 +714,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_8:
         register: 10151
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -664,6 +724,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_9:
         register: 10152
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -673,6 +734,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_10:
         register: 10153
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -682,6 +744,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_11:
         register: 10154
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -691,6 +754,7 @@ SENSOR_DEFINITIONS:
 
     pcs_alarm_12:
         register: 10155
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -700,6 +764,7 @@ SENSOR_DEFINITIONS:
 
     pcs_internal_temperature:
         register: 10156
+        count: 1
         scale: 0.1
         unit: "°C"
         device_class: "temperature"
@@ -717,6 +782,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv1_voltage:
         register: 10167
+        count: 1
         scale: 1
         unit: "V"
         device_class: "voltage"
@@ -728,6 +794,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv1_current:
         register: 10168
+        count: 1
         scale: 1
         unit: "A"
         device_class: "current"
@@ -739,6 +806,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv2_voltage:
         register: 10169
+        count: 1
         scale: 1
         unit: "V"
         device_class: "voltage"
@@ -750,6 +818,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv2_current:
         register: 10170
+        count: 1
         scale: 1
         unit: "A"
         device_class: "current"
@@ -761,6 +830,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv3_voltage:
         register: 10171
+        count: 1
         scale: 1
         unit: "V"
         device_class: "voltage"
@@ -772,6 +842,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv3_current:
         register: 10172
+        count: 1
         scale: 1
         unit: "A"
         device_class: "current"
@@ -783,6 +854,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv4_voltage:
         register: 10173
+        count: 1
         scale: 1
         unit: "V"
         device_class: "voltage"
@@ -794,6 +866,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv4_current:
         register: 10174
+        count: 1
         scale: 1
         unit: "A"
         device_class: "current"
@@ -805,6 +878,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv5_voltage:
         register: 10175
+        count: 1
         scale: 1
         unit: "V"
         device_class: "voltage"
@@ -816,6 +890,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv5_current:
         register: 10176
+        count: 1
         scale: 1
         unit: "A"
         device_class: "current"
@@ -827,6 +902,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv6_voltage:
         register: 10177
+        count: 1
         scale: 1
         unit: "V"
         device_class: "voltage"
@@ -838,6 +914,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv6_current:
         register: 10178
+        count: 1
         scale: 1
         unit: "A"
         device_class: "current"
@@ -849,6 +926,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv7_voltage:
         register: 10179
+        count: 1
         scale: 1
         unit: "V"
         device_class: "voltage"
@@ -860,6 +938,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv7_current:
         register: 10180
+        count: 1
         scale: 1
         unit: "A"
         device_class: "current"
@@ -871,6 +950,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv8_voltage:
         register: 10181
+        count: 1
         scale: 1
         unit: "V"
         device_class: "voltage"
@@ -882,6 +962,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv8_current:
         register: 10182
+        count: 1
         scale: 1
         unit: "A"
         device_class: "current"
@@ -893,6 +974,7 @@ SENSOR_DEFINITIONS:
 
     pcs_totalpv_power:
         register: 10183
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -904,6 +986,7 @@ SENSOR_DEFINITIONS:
 
     pcs_daily_pv_generation:
         register: 10185
+        count: 2
         scale: 1
         unit: "kWh"
         device_class: "energy"
@@ -915,6 +998,7 @@ SENSOR_DEFINITIONS:
 
     pcs_total_pv_generation:
         register: 10187
+        count: 2
         scale: 1
         unit: "kWh"
         device_class: "energy"
@@ -932,6 +1016,7 @@ SENSOR_DEFINITIONS:
 
     grid_uab_voltage:
         register: 10199
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -943,6 +1028,7 @@ SENSOR_DEFINITIONS:
 
     grid_ubc_voltage:
         register: 10200
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -954,6 +1040,7 @@ SENSOR_DEFINITIONS:
 
     grid_uca_voltage:
         register: 10201
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -965,6 +1052,7 @@ SENSOR_DEFINITIONS:
 
     grid_phase_a_voltage:
         register: 10202
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -976,6 +1064,7 @@ SENSOR_DEFINITIONS:
 
     grid_phase_b_voltage:
         register: 10203
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -987,6 +1076,7 @@ SENSOR_DEFINITIONS:
 
     grid_phase_c_voltage:
         register: 10204
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -998,6 +1088,7 @@ SENSOR_DEFINITIONS:
 
     grid_phase_a_current:
         register: 10205
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1009,6 +1100,7 @@ SENSOR_DEFINITIONS:
 
     grid_phase_b_current:
         register: 10206
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1020,6 +1112,7 @@ SENSOR_DEFINITIONS:
 
     grid_phase_c_current:
         register: 10207
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1031,6 +1124,7 @@ SENSOR_DEFINITIONS:
 
     grid_active_power:
         register: 10208
+        count: 1
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1042,6 +1136,7 @@ SENSOR_DEFINITIONS:
 
     grid_reactive_power:
         register: 10210
+        count: 2
         scale: 1
         unit: "kVA"
         device_class: "reactive_power"
@@ -1053,6 +1148,7 @@ SENSOR_DEFINITIONS:
 
     grid_power_factor:
         register: 10212
+        count: 1
         scale: 1
         unit: null
         state_class: "measurement"
@@ -1063,6 +1159,7 @@ SENSOR_DEFINITIONS:
 
     grid_frequency:
         register: 10213
+        count: 1
         scale: 0.01
         unit: "Hz"
         device_class: "frequency"
@@ -1080,6 +1177,7 @@ SENSOR_DEFINITIONS:
 
     backup_uab_voltage:
         register: 10224
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1091,6 +1189,7 @@ SENSOR_DEFINITIONS:
 
     backup_ubc_voltage:
         register: 10225
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1102,6 +1201,7 @@ SENSOR_DEFINITIONS:
 
     backup_uca_voltage:
         register: 10226
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1113,6 +1213,7 @@ SENSOR_DEFINITIONS:
 
     backup_phase_a_voltage:
         register: 10227
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1124,6 +1225,7 @@ SENSOR_DEFINITIONS:
 
     backup_phase_b_voltage:
         register: 10228
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1135,6 +1237,7 @@ SENSOR_DEFINITIONS:
 
     backup_phase_c_voltage:
         register: 10229
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1146,6 +1249,7 @@ SENSOR_DEFINITIONS:
 
     backup_phase_a_current:
         register: 10230
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1157,6 +1261,7 @@ SENSOR_DEFINITIONS:
 
     backup_phase_b_current:
         register: 10231
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1168,6 +1273,7 @@ SENSOR_DEFINITIONS:
 
     backup_phase_c_current:
         register: 10232
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1179,6 +1285,7 @@ SENSOR_DEFINITIONS:
 
     backup_active_power:
         register: 10233
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1190,6 +1297,7 @@ SENSOR_DEFINITIONS:
 
     backup_reactive_power:
         register: 10235
+        count: 2
         scale: 1
         unit: "kVA"
         device_class: "reactive_power"
@@ -1201,6 +1309,7 @@ SENSOR_DEFINITIONS:
 
     backup_power_factor:
         register: 10237
+        count: 1
         scale: 1
         unit: null
         state_class: "measurement"
@@ -1211,6 +1320,7 @@ SENSOR_DEFINITIONS:
 
     backup_frequency:
         register: 10238
+        count: 1
         scale: 0.01
         unit: "Hz"
         device_class: "frequency"
@@ -1228,6 +1338,7 @@ SENSOR_DEFINITIONS:
 
     battery_number_of_packs:
         register: 10249
+        count: 1
         scale: 1
         unit: null
         state_class: "measurement"
@@ -1238,6 +1349,7 @@ SENSOR_DEFINITIONS:
 
     battery_rated_capacity:
         register: 10250
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1249,6 +1361,7 @@ SENSOR_DEFINITIONS:
 
     battery_status:
         register: 10252
+        count: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -1258,6 +1371,7 @@ SENSOR_DEFINITIONS:
 
     battery_voltage:
         register: 10253
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1269,6 +1383,7 @@ SENSOR_DEFINITIONS:
 
     battery_power:
         register: 10254
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1280,6 +1395,7 @@ SENSOR_DEFINITIONS:
 
     battery_soc:
         register: 10256
+        count: 1
         scale: 1
         unit: "%"
         state_class: "measurement"
@@ -1290,6 +1406,7 @@ SENSOR_DEFINITIONS:
 
     battery_soh:
         register: 10257
+        count: 1
         scale: 1
         unit: "%"
         state_class: "measurement"
@@ -1300,6 +1417,7 @@ SENSOR_DEFINITIONS:
 
     battery_daily_charge_energy:
         register: 10258
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1311,6 +1429,7 @@ SENSOR_DEFINITIONS:
 
     battery_daily_discharge_energy:
         register: 10260
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1322,6 +1441,7 @@ SENSOR_DEFINITIONS:
 
     battery_total_charge_energy:
         register: 10262
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1333,6 +1453,7 @@ SENSOR_DEFINITIONS:
 
     battery_total_discharge_energy:
         register: 10264
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1344,6 +1465,7 @@ SENSOR_DEFINITIONS:
 
     battery_alarm_1:
         register: 10266
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -1353,6 +1475,7 @@ SENSOR_DEFINITIONS:
 
     battery_alarm_2:
         register: 10267
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -1362,6 +1485,7 @@ SENSOR_DEFINITIONS:
 
     battery_alarm_3:
         register: 10268
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -1371,6 +1495,7 @@ SENSOR_DEFINITIONS:
 
     battery_alarm_4:
         register: 10269
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -1380,6 +1505,7 @@ SENSOR_DEFINITIONS:
 
     battery_alarm_5:
         register: 10270
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -1389,6 +1515,7 @@ SENSOR_DEFINITIONS:
 
     battery_alarm_6:
         register: 10271
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -1398,6 +1525,7 @@ SENSOR_DEFINITIONS:
 
     battery_alarm_7:
         register: 10272
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -1407,6 +1535,7 @@ SENSOR_DEFINITIONS:
 
     battery_alarm_8:
         register: 10273
+        count: 1
         scale: 1
         unit: null
         enabled_by_default: true
@@ -1458,6 +1587,7 @@ SENSOR_DEFINITIONS:
 
     bp1_rate_capacity:
         register: 10318
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1469,6 +1599,7 @@ SENSOR_DEFINITIONS:
 
     bp1_status:
         register: 10320
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -1477,6 +1608,7 @@ SENSOR_DEFINITIONS:
 
     bp1_voltage:
         register: 10321
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1488,6 +1620,7 @@ SENSOR_DEFINITIONS:
 
     bp1_power:
         register: 10322
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1499,6 +1632,7 @@ SENSOR_DEFINITIONS:
 
     bp1_soc:
         register: 10324
+        count: 1
         scale: 1
         unit: "%"
         state_class: "measurement"
@@ -1509,6 +1643,7 @@ SENSOR_DEFINITIONS:
 
     bp1_soh:
         register: 10325
+        count: 1
         scale: 1
         unit: "%"
         state_class: "measurement"
@@ -1519,6 +1654,7 @@ SENSOR_DEFINITIONS:
 
     bp1_total_discharge_energy:
         register: 10326
+        count: 2
         scale: 0.1
         unit: "kWh"
         state_class: "total_increasing"
@@ -1529,6 +1665,7 @@ SENSOR_DEFINITIONS:
 
     bp1_maximum_temperature:
         register: 10328
+        count: 1
         scale: 1
         unit: "°C"
         device_class: "temperature"
@@ -1540,6 +1677,7 @@ SENSOR_DEFINITIONS:
 
     bp1_minimum_temperature:
         register: 10329
+        count: 1
         scale: 1
         unit: "°C"
         device_class: "temperature"
@@ -1593,6 +1731,7 @@ SENSOR_DEFINITIONS:
 
     bp2_rate_capacity:
         register: 10374
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1604,6 +1743,7 @@ SENSOR_DEFINITIONS:
 
     bp2_status:
         register: 10376
+        count: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -1612,6 +1752,7 @@ SENSOR_DEFINITIONS:
 
     bp2_voltage:
         register: 10377
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1623,6 +1764,7 @@ SENSOR_DEFINITIONS:
 
     bp2_power:
         register: 10378
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1634,6 +1776,7 @@ SENSOR_DEFINITIONS:
 
     bp2_soc:
         register: 10380
+        count: 1
         scale: 1
         unit: "%"
         state_class: "measurement"
@@ -1644,6 +1787,7 @@ SENSOR_DEFINITIONS:
 
     bp2_soh:
         register: 10381
+        count: 1
         scale: 1
         unit: "%"
         state_class: "measurement"
@@ -1654,6 +1798,7 @@ SENSOR_DEFINITIONS:
 
     bp2_total_discharge_energy:
         register: 10382
+        count: 2
         scale: 0.1
         unit: "kwH"
         state_class: "total_increasing"
@@ -1664,6 +1809,7 @@ SENSOR_DEFINITIONS:
 
     bp2_maximum_temperature:
         register: 10384
+        count: 1
         scale: 1
         unit: "°C"
         device_class: "temperature"
@@ -1675,6 +1821,7 @@ SENSOR_DEFINITIONS:
 
     bp2_minimum_temperature:
         register: 10385
+        count: 1
         scale: 1
         unit: "°C"
         device_class: "temperature"
@@ -1692,6 +1839,7 @@ SENSOR_DEFINITIONS:
 
     meter_model:
         register: 10620
+        count: 10
         unit: null
         enabled_by_default: true
         precision: 1
@@ -1699,6 +1847,7 @@ SENSOR_DEFINITIONS:
 
     meter_type:
         register: 10630
+        count: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -1708,6 +1857,7 @@ SENSOR_DEFINITIONS:
 
     meter_status:
         register: 10631
+        count: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -1717,6 +1867,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_a_voltage:
         register: 10632
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1728,6 +1879,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_b_voltage:
         register: 10633
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1739,6 +1891,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_c_voltage:
         register: 10634
+        count: 1
         scale: 0.1
         unit: "V"
         device_class: "voltage"
@@ -1750,6 +1903,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_a_current:
         register: 10635
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1761,6 +1915,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_b_current:
         register: 10636
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1772,6 +1927,7 @@ SENSOR_DEFINITIONS:
 
     meter_phasec_current:
         register: 10637
+        count: 1
         scale: 0.01
         unit: "A"
         device_class: "current"
@@ -1783,6 +1939,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_a_active_power:
         register: 10638
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1794,6 +1951,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_b_active_power:
         register: 10640
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1805,6 +1963,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_c_active_power:
         register: 10642
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1816,6 +1975,7 @@ SENSOR_DEFINITIONS:
 
     meter_total_active_power:
         register: 10644
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1827,6 +1987,7 @@ SENSOR_DEFINITIONS:
 
     meter_total_reactive_power:
         register: 10646
+        count: 2
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1838,6 +1999,7 @@ SENSOR_DEFINITIONS:
 
     meter_power_factor:
         register: 10648
+        count: 1
         scale: 1
         unit: null
         state_class: "measurement"
@@ -1848,6 +2010,7 @@ SENSOR_DEFINITIONS:
 
     meter_grid_frequency:
         register: 10649
+        count: 1
         scale: 0.01
         unit: "Hz"
         device_class: "frequency"
@@ -1859,6 +2022,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_a_forward_active_energy:
         register: 10650
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1870,6 +2034,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_b_forward_active_energy:
         register: 10652
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1881,6 +2046,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_c_forward_active_energy:
         register: 10654
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1892,6 +2058,7 @@ SENSOR_DEFINITIONS:
 
     meter_total_forward_active_energy:
         register: 10656
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1903,6 +2070,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_a_reverse_active_energy:
         register: 10658
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1914,6 +2082,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_b_reverse_active_energy:
         register: 10660
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1925,6 +2094,7 @@ SENSOR_DEFINITIONS:
 
     meter_phase_c_reverse_active_energy:
         register: 10662
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1936,6 +2106,7 @@ SENSOR_DEFINITIONS:
 
     meter_total_reverse_active_energy:
         register: 10664
+        count: 2
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1944,6 +2115,7 @@ SENSOR_DEFINITIONS:
         data_type: uint32
         precision: 1
         scan_interval: low
+
 
 EFFICIENCY_SENSOR_DEFINITIONS:
     round_trip_efficiency_total:
