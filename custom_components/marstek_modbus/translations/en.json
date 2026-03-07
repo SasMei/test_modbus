@@ -270,7 +270,7 @@
         "name": "PCS Alarm 12"
       },
       "pcs_internal_temperature": {
-        "name": "PCS Internal Temperature (�C)"
+        "name": "PCS Internal Temperature (°C)"
       },
       "pcs_pv1_voltage": {
         "name": "PCS PV1 Voltage (V)"
@@ -498,10 +498,10 @@
         "name": "BP1 Total Discharge Energy (kwH)"
       },
       "bp1_maximum_temperature": {
-        "name": "BP1 Maximum Temperature (�C)"
+        "name": "BP1 Maximum Temperature (°C)"
       },
       "bp1_minimum_temperature": {
-        "name": "BP1 Minimum Temperature (�C)"
+        "name": "BP1 Minimum Temperature (°C)"
       },
       "bp2_model_name": {
         "name": "BP2 Model Name"
@@ -537,10 +537,10 @@
         "name": "BP2 Total Discharge Energy (kwH)"
       },
       "bp2_maximum_temperature": {
-        "name": "BP2 Maximum Temperature (�C)"
+        "name": "BP2 Maximum Temperature (°C)"
       },
       "bp2_minimum_temperature": {
-        "name": "BP2 Minimum Temperature (�C)"
+        "name": "BP2 Minimum Temperature (°C)"
       },
       "meter_model": {
         "name": "Meter Model"
