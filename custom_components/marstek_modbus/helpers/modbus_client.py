@@ -197,7 +197,7 @@ class SolixX1ModbusClient:
 
         Args:
             register (int): Register address to read from.
-            data_type (str): Data type for interpretation, e.g. 'int16', 'int32', 'char', 'bit'.
+            data_type (str): Data type for interpretation, e.g. 'int16', 'int32', 'string', 'bit'.
             count (Optional[int]): Number of registers to read (default depends on data_type).
             bit_index (Optional[int]): Bit position for 'bit' data type (0-15).
             sensor_key (Optional[str]): Sensor key for logging.
@@ -342,7 +342,7 @@ class SolixX1ModbusClient:
                         #return regs[1] | (regs[0] << 16)
                         return (regs[1]*65536 + regs[0])
 
-                    elif data_type == "char":
+                    elif data_type == "string":
                         byte_array = bytearray()
                         for reg in regs:
                             byte_array.append(reg & 0xFF)
