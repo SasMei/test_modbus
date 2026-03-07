@@ -46,7 +46,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pv_power:
-        register: 10001
+        register: 10002
         scale: 1
         unit: "W"
         device_class: "power"
@@ -57,7 +57,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     3rd_party_pv_power:
-        register: 10003
+        register: 10004
         scale: 1
         unit: "W"
         device_class: "power"
@@ -68,7 +68,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     active_power_pcs_ac_side:
-        register: 10005
+        register: 10006
         scale: 1
         unit: "W"
         device_class: "power"
@@ -79,7 +79,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     info_battery_power:
-        register: 10007
+        register: 10008
         scale: 1
         unit: "W"
         device_class: "power"
@@ -90,7 +90,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     load_power:
-        register: 10009
+        register: 10010
         scale: 1
         unit: "W"
         device_class: "power"
@@ -101,7 +101,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     grid_power:
-        register: 10011
+        register: 10012
         scale: 1
         unit: "W"
         device_class: "power"
@@ -132,7 +132,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     daily_pv_generation:
-        register: 10015
+        register: 10016
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -143,7 +143,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     total_pv_generation:
-        register: 10017
+        register: 10018
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -154,7 +154,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     daily_battery_charge_energy:
-        register: 10019
+        register: 10020
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -165,7 +165,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     total_battery_charge_energy:
-        register: 10021
+        register: 10022
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -176,7 +176,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     daily_load_consumption_energy:
-        register: 10023
+        register: 10024
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -187,7 +187,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     total_load_consumption_energy:
-        register: 10025
+        register: 10026
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -198,7 +198,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     daily_purchased_energy:
-        register: 10027
+        register: 10028
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -209,7 +209,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     total_purchased_energy:
-        register: 10029
+        register: 10030
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -220,7 +220,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     daily_feed_in_energy:
-        register: 10031
+        register: 10032
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -231,7 +231,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     total_feed_in_energy:
-        register: 10033
+        register: 10034
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -242,7 +242,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     rechargeable_power:
-        register: 10035
+        register: 10036
         scale: 1
         unit: "W"
         device_class: "power"
@@ -253,7 +253,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     dischargeable_power:
-        register: 10037
+        register: 10038
         scale: 1
         unit: "W"
         device_class: "power"
@@ -352,7 +352,7 @@ SENSOR_DEFINITIONS:
     # ===== Control (RW) =====
 
     system_time:
-        register: 10059
+        register: 10060
         unit: null
         device_class: "timestamp"
         enabled_by_default: true
@@ -403,7 +403,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     battery_charge_discharge_control:
-        register: 10070
+        register: 10071
         scale: 1
         unit: "W"
         device_class: "power"
@@ -432,7 +432,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     export_power_limit_control_value:
-        register: 10074
+        register: 10075
         unit: "W"
         device_class: "power"
         state_class: "measurement"
@@ -451,7 +451,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     import_power_limit_control_value:
-        register: 10077
+        register: 10078
         unit: "W"
         device_class: "power"
         state_class: "measurement"
@@ -478,7 +478,7 @@ SENSOR_DEFINITIONS:
     # ===== PCS - Basic Information =====
 
     pcs_model_name:
-        register: 10081
+        register: 10090
         count: 10
         unit: null
         enabled_by_default: true
@@ -487,7 +487,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_sn:
-        register: 10089
+        register: 10100
         count: 12
         unit: null
         enabled_by_default: true
@@ -496,7 +496,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_software_version:
-        register: 10107
+        register: 10112
         count: 6
         unit: null
         enabled_by_default: true
@@ -505,7 +505,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_hardware_version:
-        register: 10113
+        register: 10118
         count: 6
         unit: null
         enabled_by_default: true
@@ -514,7 +514,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_rated_power:
-        register: 10123
+        register: 10124
         scale: 1
         unit: "W"
         device_class: "power"
@@ -525,7 +525,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_maximum_active_power:
-        register: 10125
+        register: 10126
         scale: 1
         unit: "W"
         device_class: "power"
@@ -536,7 +536,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_maximum_apparent_power:
-        register: 10127
+        register: 10128
         scale: 1
         unit: "kVA"
         device_class: "apparent_power"
@@ -701,7 +701,7 @@ SENSOR_DEFINITIONS:
     pcs_internal_temperature:
         register: 10156
         scale: 0.1
-        unit: "�C"
+        unit: "°C"
         device_class: "temperature"
         state_class: "measurement"
         enabled_by_default: true
@@ -892,7 +892,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_totalpv_power:
-        register: 10182
+        register: 10183
         scale: 1
         unit: "W"
         device_class: "power"
@@ -903,7 +903,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_daily_pv_generation:
-        register: 10184
+        register: 10185
         scale: 1
         unit: "kWh"
         device_class: "energy"
@@ -914,7 +914,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     pcs_total_pv_generation:
-        register: 10186
+        register: 10187
         scale: 1
         unit: "kWh"
         device_class: "energy"
@@ -1041,7 +1041,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     grid_reactive_power:
-        register: 10209
+        register: 10210
         scale: 1
         unit: "kVA"
         device_class: "reactive_power"
@@ -1178,7 +1178,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     backup_active_power:
-        register: 10232
+        register: 10233
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1189,7 +1189,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     backup_reactive_power:
-        register: 10234
+        register: 10235
         scale: 1
         unit: "kVA"
         device_class: "reactive_power"
@@ -1237,7 +1237,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     battery_rated_capacity:
-        register: 10249
+        register: 10250
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1268,7 +1268,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     battery_power:
-        register: 10253
+        register: 10254
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1299,7 +1299,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     battery_daily_charge_energy:
-        register: 10257
+        register: 10258
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1310,7 +1310,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     battery_daily_discharge_energy:
-        register: 10259
+        register: 10260
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1321,7 +1321,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     battery_total_charge_energy:
-        register: 10261
+        register: 10262
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1332,7 +1332,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     battery_total_discharge_energy:
-        register: 10263
+        register: 10264
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1421,7 +1421,7 @@ SENSOR_DEFINITIONS:
     # ===== Battery Pack 1 Information =====
 
     bp1_model_name:
-        register: 10275
+        register: 10284
         count: 10
         unit: null
         enabled_by_default: true
@@ -1430,7 +1430,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp1_sn:
-        register: 10283
+        register: 10294
         count: 12
         unit: null
         enabled_by_default: true
@@ -1439,7 +1439,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp1_software_version:
-        register: 10301
+        register: 10306
         count: 6
         unit: null
         enabled_by_default: true
@@ -1448,7 +1448,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp1_hardware_version:
-        register: 10307
+        register: 10312
         count: 6
         unit: null
         enabled_by_default: true
@@ -1457,7 +1457,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp1_rate_capacity:
-        register: 10317
+        register: 10318
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1487,7 +1487,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp1_power:
-        register: 10321
+        register: 10322
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1518,9 +1518,9 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp1_total_discharge_energy:
-        register: 10325
+        register: 10326
         scale: 0.1
-        unit: "kwH"
+        unit: "kWh"
         state_class: "total_increasing"
         enabled_by_default: true
         data_type: uint32
@@ -1530,7 +1530,7 @@ SENSOR_DEFINITIONS:
     bp1_maximum_temperature:
         register: 10328
         scale: 1
-        unit: "�C"
+        unit: "°C"
         device_class: "temperature"
         state_class: "measurement"
         enabled_by_default: true
@@ -1541,7 +1541,7 @@ SENSOR_DEFINITIONS:
     bp1_minimum_temperature:
         register: 10329
         scale: 1
-        unit: "�C"
+        unit: "°C"
         device_class: "temperature"
         state_class: "measurement"
         enabled_by_default: true
@@ -1556,7 +1556,7 @@ SENSOR_DEFINITIONS:
     # ===== Battery Pack 2 Information =====
 
     bp2_model_name:
-        register: 10331
+        register: 10340
         count: 10
         unit: null
         enabled_by_default: true
@@ -1565,7 +1565,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp2_sn:
-        register: 10339
+        register: 10350
         count: 12
         unit: null
         enabled_by_default: true
@@ -1574,7 +1574,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp2_software_version:
-        register: 10357
+        register: 10362
         count: 6
         unit: null
         enabled_by_default: true
@@ -1583,7 +1583,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp2_hardware_version:
-        register: 10363
+        register: 10368
         count: 6
         unit: null
         enabled_by_default: true
@@ -1592,7 +1592,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp2_rate_capacity:
-        register: 10373
+        register: 10374
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1622,7 +1622,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp2_power:
-        register: 10377
+        register: 10378
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1653,7 +1653,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     bp2_total_discharge_energy:
-        register: 10381
+        register: 10382
         scale: 0.1
         unit: "kwH"
         state_class: "total_increasing"
@@ -1665,7 +1665,7 @@ SENSOR_DEFINITIONS:
     bp2_maximum_temperature:
         register: 10384
         scale: 1
-        unit: "�C"
+        unit: "°C"
         device_class: "temperature"
         state_class: "measurement"
         enabled_by_default: true
@@ -1676,7 +1676,7 @@ SENSOR_DEFINITIONS:
     bp2_minimum_temperature:
         register: 10385
         scale: 1
-        unit: "�C"
+        unit: "°C"
         device_class: "temperature"
         state_class: "measurement"
         enabled_by_default: true
@@ -1691,7 +1691,7 @@ SENSOR_DEFINITIONS:
     # ===== Meter Information =====
 
     meter_model:
-        register: 10611
+        register: 10620
         unit: null
         enabled_by_default: true
         precision: 1
@@ -1782,7 +1782,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_a_active_power:
-        register: 10637
+        register: 10638
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1793,7 +1793,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_b_active_power:
-        register: 10639
+        register: 10640
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1804,7 +1804,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_c_active_power:
-        register: 10641
+        register: 10642
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1815,7 +1815,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_total_active_power:
-        register: 10643
+        register: 10644
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1826,7 +1826,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_total_reactive_power:
-        register: 10645
+        register: 10646
         scale: 1
         unit: "W"
         device_class: "power"
@@ -1858,7 +1858,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_a_forward_active_energy:
-        register: 10649
+        register: 10650
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1869,7 +1869,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_b_forward_active_energy:
-        register: 10651
+        register: 10652
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1880,7 +1880,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_c_forward_active_energy:
-        register: 10653
+        register: 10654
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1891,7 +1891,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_total_forward_active_energy:
-        register: 10655
+        register: 10656
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1902,7 +1902,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_a_reverse_active_energy:
-        register: 10657
+        register: 10658
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1913,7 +1913,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_b_reverse_active_energy:
-        register: 10659
+        register: 10660
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1924,7 +1924,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_phase_c_reverse_active_energy:
-        register: 10661
+        register: 10662
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1935,7 +1935,7 @@ SENSOR_DEFINITIONS:
         scan_interval: low
 
     meter_total_reverse_active_energy:
-        register: 10663
+        register: 10664
         scale: 0.1
         unit: "kWh"
         device_class: "energy"
@@ -1944,7 +1944,6 @@ SENSOR_DEFINITIONS:
         data_type: uint32
         precision: 1
         scan_interval: low
-
 
 EFFICIENCY_SENSOR_DEFINITIONS:
     round_trip_efficiency_total:
