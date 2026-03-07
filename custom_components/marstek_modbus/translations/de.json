@@ -66,196 +66,555 @@
   "entity": {
     "sensor": {
       "plant_status": {
-        "name": "Status"
+        "name": "Plant Status"
       },
-      "activepower_acside": {
-        "name": "Aktive Leistung (AC-Seite)"
+      "info_battery_status": {
+        "name": "Info Battery Status"
       },
-      "daily_pv_production": {
-        "name": "Tägliche PV-Produktion"
+      "pv_power": {
+        "name": "PV Power"
       },
-      "total_pv_production": {
-        "name": "Gesamte PV-Produktion"
+      "3rd_party_pv_power": {
+        "name": "3rd Party PV Power"
       },
-      "model_name": {
-        "name": "Modellname"
+      "active_power_pcs_ac_side": {
+        "name": "Active Power PCS AC Side (W)"
       },
-      "model_name2": {
-        "name": "Modellname 2"
+      "info_battery_power": {
+        "name": "Info Battery Power (W)"
       },
-      "software_version": {
-        "name": "Softwareversion"
+      "load_power": {
+        "name": "Load Power (W)"
       },
-      "bms_version": {
-        "name": "BMS-Version"
+      "grid_power": {
+        "name": "Grid Power (W)"
       },
-      "ems_version": {
-        "name": "EMS-Version"
+      "soc": {
+        "name": "SOC (%)"
       },
-      "comm_module_firmware": {
-        "name": "Kommunikationsmodul-Firmware"
+      "soh": {
+        "name": "SOH (%)"
       },
-      "mac_address": {
-        "name": "MAC-Adresse"
+      "daily_pv_generation": {
+        "name": "Daily PV Generation (kWh)"
       },
-      "battery_soc": {
-        "name": "Batterie-Ladezustand"
+      "total_pv_generation": {
+        "name": "Total PV Generation (kWh)"
       },
-      "battery_total_energy": {
-        "name": "Batterie-Gesamtenergie"
+      "daily_battery_charge_energy": {
+        "name": "Daily Battery Charge Energy (kWh)"
+      },
+      "total_battery_charge_energy": {
+        "name": "Total Battery Charge Energy (kWh)"
+      },
+      "daily_load_consumption_energy": {
+        "name": "Daily Load Consumption Energy (kWh)"
+      },
+      "total_load_consumption_energy": {
+        "name": "Total Load Consumption Energy (kWh)"
+      },
+      "daily_purchased_energy": {
+        "name": "Daily Purchased Energy (kWh)"
+      },
+      "total_purchased_energy": {
+        "name": "Total Purchased Energy (kWh)"
+      },
+      "daily_feed_in_energy": {
+        "name": "Daily Feed_in_Energy (kWh)"
+      },
+      "total_feed_in_energy": {
+        "name": "Total Feed_in_Energy (kWh)"
+      },
+      "rechargeable_power": {
+        "name": "Rechargeable Power (W)"
+      },
+      "dischargeable_power": {
+        "name": "Dischargeable Power (W)"
+      },
+      "number_of_pcs": {
+        "name": "Number of PCS"
+      },
+      "number_of_available_pcs": {
+        "name": "Number of Available PCS"
+      },
+      "system_alarm_1": {
+        "name": "System Alarm 1"
+      },
+      "system_alarm_2": {
+        "name": "System Alarm 2"
+      },
+      "system_alarm_3": {
+        "name": "System Alarm 3"
+      },
+      "system_alarm_4": {
+        "name": "System Alarm 4"
+      },
+      "system_alarm_5": {
+        "name": "System Alarm 5"
+      },
+      "system_alarm_6": {
+        "name": "System Alarm 6"
+      },
+      "system_alarm_7": {
+        "name": "System Alarm 7"
+      },
+      "system_alarm_8": {
+        "name": "System Alarm 8"
+      },
+      "system_time": {
+        "name": "System Time"
+      },
+      "time_zone": {
+        "name": "Time Zone"
+      },
+      "dst": {
+        "name": "DST"
+      },
+      "work_mode": {
+        "name": "Work Mode"
+      },
+      "active_power_control_percentage": {
+        "name": "Active Power Control Percentage (%)"
+      },
+      "reactive_power_control_percentage": {
+        "name": "Reactive Power Control Percentage (%)"
+      },
+      "battery_charge_discharge_control": {
+        "name": "Battery Charge_Discharge Control (W)"
+      },
+      "switch_on_off_control": {
+        "name": "Switch On_Off Control"
+      },
+      "export_power_limit_control_mode": {
+        "name": "Export Power Limit Control Mode"
+      },
+      "export_power_limit_control_value": {
+        "name": "Export Power Limit Control Value (W)"
+      },
+      "import_power_limit_control_mode": {
+        "name": "Import Power Limit Control Mode"
+      },
+      "import_power_limit_control_value": {
+        "name": "Import Power Limit Control Value (W)"
+      },
+      "com_disconnect_tie_with_vpp": {
+        "name": "Com Disconnect Tie with VPP (s)"
+      },
+      "pcs_model_name": {
+        "name": "PCS Model Name"
+      },
+      "pcs_sn": {
+        "name": "PCS SN"
+      },
+      "pcs_software_version": {
+        "name": "PCS Software Version"
+      },
+      "pcs_hardware_version": {
+        "name": "PCS Hardware Version"
+      },
+      "pcs_rated_power": {
+        "name": "PCS Rated Power (W)"
+      },
+      "pcs_maximum_active_power": {
+        "name": "PCS Maximum Active Power (W)"
+      },
+      "pcs_maximum_apparent_power": {
+        "name": "PCS Maximum Apparent Power (kVA)"
+      },
+      "pcs_numbers_of_mppt": {
+        "name": "PCS Numbers of MPPT"
+      },
+      "pcs_strings_per_mppt": {
+        "name": "PCS Strings per MPPT"
+      },
+      "pcs_output_mode": {
+        "name": "PCS Output Mode"
+      },
+      "pcs_work_status": {
+        "name": "PCS Work Status"
+      },
+      "pcs_alarm_1": {
+        "name": "PCS Alarm 1"
+      },
+      "pcs_alarm_2": {
+        "name": "PCS Alarm 2"
+      },
+      "pcs_alarm_3": {
+        "name": "PCS Alarm 3"
+      },
+      "pcs_alarm_4": {
+        "name": "PCS Alarm 4"
+      },
+      "pcs_alarm_5": {
+        "name": "PCS Alarm 5"
+      },
+      "pcs_alarm_6": {
+        "name": "PCS Alarm 6"
+      },
+      "pcs_alarm_7": {
+        "name": "PCS Alarm 7"
+      },
+      "pcs_alarm_8": {
+        "name": "PCS Alarm 8"
+      },
+      "pcs_alarm_9": {
+        "name": "PCS Alarm 9"
+      },
+      "pcs_alarm_10": {
+        "name": "PCS Alarm 10"
+      },
+      "pcs_alarm_11": {
+        "name": "PCS Alarm 11"
+      },
+      "pcs_alarm_12": {
+        "name": "PCS Alarm 12"
+      },
+      "pcs_internal_temperature": {
+        "name": "PCS Internal Temperature (�C)"
+      },
+      "pcs_pv1_voltage": {
+        "name": "PCS PV1 Voltage (V)"
+      },
+      "pcs_pv1_current": {
+        "name": "PCS PV1 Current (A)"
+      },
+      "pcs_pv2_voltage": {
+        "name": "PCS PV2 Voltage (V)"
+      },
+      "pcs_pv2_current": {
+        "name": "PCS PV2 Current (A)"
+      },
+      "pcs_pv3_voltage": {
+        "name": "PCS PV3 Voltage (V)"
+      },
+      "pcs_pv3_current": {
+        "name": "PCS PV3 Current (A)"
+      },
+      "pcs_pv4_voltage": {
+        "name": "PCS PV4 Voltage (V)"
+      },
+      "pcs_pv4_current": {
+        "name": "PCS PV4 Current (A)"
+      },
+      "pcs_pv5_voltage": {
+        "name": "PCS PV5 Voltage (V)"
+      },
+      "pcs_pv5_current": {
+        "name": "PCS PV5 Current (A)"
+      },
+      "pcs_pv6_voltage": {
+        "name": "PCS PV6 Voltage (V)"
+      },
+      "pcs_pv6_current": {
+        "name": "PCS PV6 Current (A)"
+      },
+      "pcs_pv7_voltage": {
+        "name": "PCS PV7 Voltage (V)"
+      },
+      "pcs_pv7_current": {
+        "name": "PCS PV7 Current (A)"
+      },
+      "pcs_pv8_voltage": {
+        "name": "PCS PV8 Voltage (V)"
+      },
+      "pcs_pv8_current": {
+        "name": "PCS PV8 Current (A)"
+      },
+      "pcs_totalpv_power": {
+        "name": "PCS TotalPV Power (W)"
+      },
+      "pcs_daily_pv_generation": {
+        "name": "PCS Daily PV Generation (kWh)"
+      },
+      "pcs_total_pv_generation": {
+        "name": "PCS Total PV Generation (kWh)"
+      },
+      "grid_uab_voltage": {
+        "name": "Grid Uab Voltage (V)"
+      },
+      "grid_ubc_voltage": {
+        "name": "Grid Ubc Voltage (V)"
+      },
+      "grid_uca_voltage": {
+        "name": "Grid Uca Voltage (V)"
+      },
+      "grid_phase_a_voltage": {
+        "name": "Grid Phase A Voltage (V)"
+      },
+      "grid_phase_b_voltage": {
+        "name": "Grid Phase B Voltage (V)"
+      },
+      "grid_phase_c_voltage": {
+        "name": "Grid Phase C Voltage (V)"
+      },
+      "grid_phase_a_current": {
+        "name": "Grid Phase A Current (A)"
+      },
+      "grid_phase_b_current": {
+        "name": "Grid Phase B Current (A)"
+      },
+      "grid_phase_c_current": {
+        "name": "Grid Phase C Current (A)"
+      },
+      "grid_active_power": {
+        "name": "Grid Active Power (W)"
+      },
+      "grid_reactive_power": {
+        "name": "Grid Reactive Power (kVA)"
+      },
+      "grid_power_factor": {
+        "name": "Grid Power Factor"
+      },
+      "grid_frequency": {
+        "name": "Grid Frequency (Hz)"
+      },
+      "backup_uab_voltage": {
+        "name": "Backup Uab Voltage (V)"
+      },
+      "backup_ubc_voltage": {
+        "name": "Backup Ubc Voltage (V)"
+      },
+      "backup_uca_voltage": {
+        "name": "Backup Uca Voltage (V)"
+      },
+      "backup_phase_a_voltage": {
+        "name": "Backup Phase A Voltage (V)"
+      },
+      "backup_phase_b_voltage": {
+        "name": "Backup Phase B Voltage (V)"
+      },
+      "backup_phase_c_voltage": {
+        "name": "Backup Phase C Voltage (V)"
+      },
+      "backup_phase_a_current": {
+        "name": "Backup Phase A Current (A)"
+      },
+      "backup_phase_b_current": {
+        "name": "Backup Phase B Current (A)"
+      },
+      "backup_phase_c_current": {
+        "name": "Backup Phase C Current (A)"
+      },
+      "backup_active_power": {
+        "name": "Backup Active Power (W)"
+      },
+      "backup_reactive_power": {
+        "name": "Backup Reactive Power (kVA)"
+      },
+      "backup_power_factor": {
+        "name": "Backup Power Factor"
+      },
+      "backup_frequency": {
+        "name": "Backup Frequency (Hz)"
+      },
+      "battery_number_of_packs": {
+        "name": "Battery Number of Packs"
+      },
+      "battery_rated_capacity": {
+        "name": "Battery Rated Capacity (kWh)"
+      },
+      "battery_status": {
+        "name": "Battery Status"
       },
       "battery_voltage": {
-        "name": "Batteriespannung"
-      },
-      "battery_current": {
-        "name": "Batteriestrom"
+        "name": "Battery Voltage (V)"
       },
       "battery_power": {
-        "name": "Batterieleistung"
+        "name": "Battery Power (W)"
       },
-      "internal_temperature": {
-        "name": "Innentemperatur"
+      "battery_soc": {
+        "name": "Battery SOC (%)"
       },
-      "internal_mos1_temperature": {
-        "name": "Interne MOS1-Temperatur"
+      "battery_soh": {
+        "name": "Battery SOH (%)"
       },
-      "internal_mos2_temperature": {
-        "name": "Interne MOS2-Temperatur"
+      "battery_daily_charge_energy": {
+        "name": "Battery Daily Charge Energy (kWh)"
       },
-      "ac_voltage": {
-        "name": "AC-Spannung"
+      "battery_daily_discharge_energy": {
+        "name": "Battery Daily Discharge Energy (kWh)"
       },
-      "ac_current": {
-        "name": "AC-Strom"
+      "battery_total_charge_energy": {
+        "name": "Battery Total Charge Energy (kWh)"
       },
-      "ac_power": {
-        "name": "AC-Leistung"
+      "battery_total_discharge_energy": {
+        "name": "Battery Total Discharge Energy (kWh)"
       },
-      "ac_frequency": {
-        "name": "AC-Frequenz"
+      "battery_alarm_1": {
+        "name": "Battery Alarm 1"
       },
-      "total_charging_energy": {
-        "name": "Gesamte Ladeenergie"
+      "battery_alarm_2": {
+        "name": "Battery Alarm 2"
       },
-      "total_discharging_energy": {
-        "name": "Gesamte Entladeenergie"
+      "battery_alarm_3": {
+        "name": "Battery Alarm 3"
       },
-      "total_daily_charging_energy": {
-        "name": "Tägliche Ladeenergie"
+      "battery_alarm_4": {
+        "name": "Battery Alarm 4"
       },
-      "total_daily_discharging_energy": {
-        "name": "Tägliche Entladeenergie"
+      "battery_alarm_5": {
+        "name": "Battery Alarm 5"
       },
-      "total_monthly_charging_energy": {
-        "name": "Monatliche Ladeenergie"
+      "battery_alarm_6": {
+        "name": "Battery Alarm 6"
       },
-      "total_monthly_discharging_energy": {
-        "name": "Monatliche Entladeenergie"
+      "battery_alarm_7": {
+        "name": "Battery Alarm 7"
       },
-      "max_cell_temperature": {
-        "name": "Maximale Zellentemperatur"
+      "battery_alarm_8": {
+        "name": "Battery Alarm 8"
       },
-      "min_cell_temperature": {
-        "name": "Minimale Zellentemperatur"
+      "bp1_model_name": {
+        "name": "BP1 Model Name"
       },
-      "max_cell_voltage": {
-        "name": "Maximale Zellenspannung"
+      "bp1_sn": {
+        "name": "BP1 SN"
       },
-      "min_cell_voltage": {
-        "name": "Minimale Zellenspannung"
+      "bp1_software_version": {
+        "name": "BP1 Software Version"
       },
-      "inverter_state": {
-        "name": "Wechselrichter-Status",
-        "state": {
-          "0": "Schlafmodus",
-          "1": "Standby",
-          "2": "Laden",
-          "3": "Entladen",
-          "4": "Backup-Modus",
-          "5": "OTA-Upgrade",
-          "6": "Bypass"
-        }
+      "bp1_hardware_version": {
+        "name": "BP1 Hardware Version"
       },
-      "fault_status": {
-        "name": "Fehlerstatus"
+      "bp1_rate_capacity": {
+        "name": "BP1 Rate Capacity (kWh)"
       },
-      "alarm_status": {
-        "name": "Alarmstatus"
+      "bp1_status": {
+        "name": "BP1 Status"
       },
-      "modbus_address": {
-        "name": "Modbus-Adresse"
+      "bp1_voltage": {
+        "name": "BP1 Voltage (V)"
       },
-      "ac_offgrid_voltage": {
-        "name": "AC-Offgrid-Spannung"
+      "bp1_power": {
+        "name": "BP1 Power (W)"
       },
-      "ac_offgrid_current": {
-        "name": "AC-Offgrid-Strom"
+      "bp1_soc": {
+        "name": "BP1 SOC (%)"
       },
-      "ac_offgrid_power": {
-        "name": "AC-Offgrid-Leistung"
+      "bp1_soh": {
+        "name": "BP1 SOH (%)"
       },
-      "wifi_signal_strength": {
-        "name": "WLAN-Signalstärke"
+      "bp1_total_discharge_energy": {
+        "name": "BP1 Total Discharge Energy (kwH)"
       },
-      "round_trip_efficiency_total": {
-        "name": "Gesamt-Roundtrip-Effizienz"
+      "bp1_maximum_temperature": {
+        "name": "BP1 Maximum Temperature (�C)"
       },
-      "round_trip_efficiency_monthly": {
-        "name": "Monatliche Roundtrip-Effizienz"
+      "bp1_minimum_temperature": {
+        "name": "BP1 Minimum Temperature (�C)"
       },
-      "conversion_efficiency": {
-        "name": "Umwandlungseffizienz"
+      "bp2_model_name": {
+        "name": "BP2 Model Name"
       },
-      "stored_energy": {
-        "name": "Gespeicherte Energie"
+      "bp2_sn": {
+        "name": "BP2 SN"
       },
-      "mppt1_voltage": {
-        "name": "MPPT1 Spannung"
+      "bp2_software_version": {
+        "name": "BP2 Software Version"
       },
-      "mppt1_current": {
-        "name": "MPPT1 Strom"
+      "bp2_hardware_version": {
+        "name": "BP2 Hardware Version"
       },
-      "mppt1_power": {
-        "name": "MPPT1 Leistung"
+      "bp2_rate_capacity": {
+        "name": "BP2 Rate Capacity (kWh)"
       },
-      "mppt2_voltage": {
-        "name": "MPPT2 Spannung"
+      "bp2_status": {
+        "name": "BP2 Status"
       },
-      "mppt2_current": {
-        "name": "MPPT2 Strom"
+      "bp2_voltage": {
+        "name": "BP2 Voltage (V)"
       },
-      "mppt2_power": {
-        "name": "MPPT2 Leistung"
+      "bp2_power": {
+        "name": "BP2 Power (W)"
       },
-      "mppt3_voltage": {
-        "name": "MPPT3 Spannung"
+      "bp2_soc": {
+        "name": "BP2 SOC (%)"
       },
-      "mppt3_current": {
-        "name": "MPPT3 Strom"
+      "bp2_soh": {
+        "name": "BP2 SOH (%)"
       },
-      "mppt3_power": {
-        "name": "MPPT3 Leistung"
+      "bp2_total_discharge_energy": {
+        "name": "BP2 Total Discharge Energy (kwH)"
       },
-      "mppt4_voltage": {
-        "name": "MPPT4 Spannung"
+      "bp2_maximum_temperature": {
+        "name": "BP2 Maximum Temperature (�C)"
       },
-      "mppt4_current": {
-        "name": "MPPT4 Strom"
+      "bp2_minimum_temperature": {
+        "name": "BP2 Minimum Temperature (�C)"
       },
-      "mppt4_power": {
-        "name": "MPPT4 Leistung"
+      "meter_model": {
+        "name": "Meter Model"
       },
-      "bluetooth_status": {
-        "name": "Bluetooth-Status",
-        "state": {
-          "0": "Getrennt",
-          "1": "Nach dem Neustart verbunden",
-          "2": "Verbunden",
-          "3": "Aktiv",
-          "4": "Gesperrt"
-        }
+      "meter_type": {
+        "name": "Meter Type"
+      },
+      "meter_status": {
+        "name": "Meter Status"
+      },
+      "meter_phase_a_voltage": {
+        "name": "Meter Phase A Voltage (V)"
+      },
+      "meter_phase_b_voltage": {
+        "name": "Meter Phase B Voltage (V)"
+      },
+      "meter_phase_c_voltage": {
+        "name": "Meter Phase C Voltage (V)"
+      },
+      "meter_phase_a_current": {
+        "name": "Meter Phase A Current (A)"
+      },
+      "meter_phase_b_current": {
+        "name": "Meter Phase B Current (A)"
+      },
+      "meter_phasec_current": {
+        "name": "Meter PhaseC Current (A)"
+      },
+      "meter_phase_a_active_power": {
+        "name": "Meter Phase A Active Power (W)"
+      },
+      "meter_phase_b_active_power": {
+        "name": "Meter Phase B Active Power (W)"
+      },
+      "meter_phase_c_active_power": {
+        "name": "Meter Phase C Active Power (W)"
+      },
+      "meter_total_active_power": {
+        "name": "Meter Total Active Power (W)"
+      },
+      "meter_total_reactive_power": {
+        "name": "Meter Total Reactive Power (W)"
+      },
+      "meter_power_factor": {
+        "name": "Meter Power Factor"
+      },
+      "meter_grid_frequency": {
+        "name": "Meter Grid Frequency (Hz)"
+      },
+      "meter_phase_a_forward_active_energy": {
+        "name": "Meter Phase A Forward Active Energy (kWh)"
+      },
+      "meter_phase_b_forward_active_energy": {
+        "name": "Meter Phase B Forward Active Energy (kWh)"
+      },
+      "meter_phase_c_forward_active_energy": {
+        "name": "Meter Phase C Forward Active Energy (kWh)"
+      },
+      "meter_total_forward_active_energy": {
+        "name": "Meter Total Forward Active Energy (kWh)"
+      },
+      "meter_phase_a_reverse_active_energy": {
+        "name": "Meter Phase A Reverse Active Energy (kWh)"
+      },
+      "meter_phase_b_reverse_active_energy": {
+        "name": "Meter Phase B Reverse Active Energy (kWh)"
+      },
+      "meter_phase_c_reverse_active_energy": {
+        "name": "Meter Phase C Reverse Active Energy (kWh)"
+      },
+      "meter_total_reverse_active_energy": {
+        "name": "Meter Total Reverse Active Energy (kWh)"
       }
-    },
+    },  
     "binary_sensor": {
       "wifi_status": {
         "name": "WLAN-Status"
